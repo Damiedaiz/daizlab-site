@@ -1,0 +1,3 @@
+# Legal policy drafts
+
+The policy pages in this folder are starter templates only. They are not legal advice and must be completed with verified company details and reviewed by qualified counsel before publication. In particular, confirm the applicable Nigeria Data Protection Act 2023 requirements, consumer rights, governing law, contact details, retention periods and any cross-border data transfers.
