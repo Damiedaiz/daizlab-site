@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lab.daizlab.store"),
+  metadataBase: new URL("https://daizlab.app"),
   title: { default: "DaizLab — Systems That Understand Intent", template: "%s | DaizLab" },
   description: "DaizLab explores human intent, structured information and meaningful digital action.",
   applicationName: "DaizLab",
@@ -13,8 +13,10 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "DaizLab",
     title: "DaizLab — Systems That Understand Intent",
-    description: "Human intent, structured into meaningful digital action."
-  }
+    description: "Human intent, structured into meaningful digital action.",
+    url: "https://daizlab.app"
+  },
+  alternates: { canonical: "/" }
 };
 
 export const viewport: Viewport = {
@@ -29,7 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <header className="site-header">
           <Link className="brand" href="/"><span className="brand-mark">D</span> DAIZLAB<span className="brand-dot">.</span></Link>
-          <nav>
+          <nav aria-label="Main navigation">
             <Link href="/archive">Archive</Link>
             <Link href="/architecture">Architecture</Link>
             <Link href="/haven">Haven</Link>
