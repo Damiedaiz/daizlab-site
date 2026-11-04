@@ -38,10 +38,7 @@ export default function SLOS() {
   }
 
   function next() {
-    if (answers[index] === undefined) {
-      setDataMessage("Choose an answer to continue.");
-      return;
-    }
+    if (answers[index] === undefined) { setDataMessage("Choose an answer to continue."); return; }
     setDataMessage("");
     if (index < qs.length - 1) setIndex(index + 1);
     else finish(answers);
@@ -58,9 +55,7 @@ export default function SLOS() {
     const blob = new Blob([payload], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = "daizlab-slos-data.json";
-    anchor.click();
+    anchor.href = url; anchor.download = "daizlab-slos-data.json"; anchor.click();
     URL.revokeObjectURL(url);
   }
 
