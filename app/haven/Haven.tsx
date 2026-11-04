@@ -25,12 +25,9 @@ export default function Haven() {
     const next = [...entries, { text: text.trim(), date: new Date().toISOString() }];
     try {
       localStorage.setItem("daizlab:haven", JSON.stringify(next));
-      setEntries(next);
-      setText("");
+      setEntries(next); setText("");
       setStatus("Saved on this device. Nothing was sent.");
-    } catch {
-      setStatus("This browser could not save the entry. Check available device storage.");
-    }
+    } catch { setStatus("This browser could not save the entry. Check available device storage."); }
   }
 
   return <main className="wrap" style={{ filter: silent ? "saturate(.25)" : "none", transition: "filter .25s ease" }}>
