@@ -1,22 +1,20 @@
-# DaizLab static website
+# DaizLab — Next.js application
 
-Mobile-first HTML, CSS and vanilla JavaScript. No framework, package manager, build command, backend or database.
+This repository contains the native Next.js App Router implementation of DaizLab. The application uses Next.js 16, React 19 and TypeScript.
 
-## Pages
-- index.html — intent objective and on-device reading reflection score
-- archive.html — searchable research notes
-- arch.html and waaas.html — architecture and lightweight web-app proof page
-- haven/ — local-first private journal
-- slos.html — transparent local-only learning check
-- damiedaiz.html and dgcs.html — founder profile and growth framework
-- legal/ — draft legal templates (review required)
-- pwa-template/ — starter project
+## Development
+Install dependencies with npm install, run npm run dev for local development, and use npm run build to create a production build.
 
-## Publish
-Serve the repository root as a static site. GitHub Pages uses branch main and folder /(root); no build command is required. Enable Pages in repository Settings. Add a custom domain only after DNS and ownership verification.
+## Routes
+- / — intent objective and on-device reading reflection
+- /archive — searchable research archive
+- /architecture — intent architecture
+- /haven — private local-first reflection space
+- /slos — local-only Smart Logistics Operating Systems learning check
+- /waaas — Web Accessible Application Systems proof page
+- /damiedaiz — founder profile
+- /growth-systems — digital growth and conversion systems
 
-## Launch checklist
-Complete legal placeholders and obtain lawyer review. Verify company contact details and canonical domain. Test mobile and offline behavior. The reading score is an on-device activity indicator, not a comprehension test. Haven and quiz data remain in browser local storage and are deleted if browser site data is cleared. No testimonials, certifications or performance claims are invented.
+Legacy HTML files are retained as migration references. Next.js redirects their former .html paths to native routes. Do not copy HTML pages into public; update the matching App Router page instead.
 
-## PWA starter
-Copy pwa-template into a new static project, update the name and manifest, replace the SVG icon, adjust service-worker cache files, test online/offline, increment the cache version when assets change, and publish over HTTPS.
+Haven entries, reading activity and SLOS results stay in browser local storage. The root-scoped service worker provides an offline fallback without caching private journal or form data. The reading score is an activity indicator, not a comprehension test.
