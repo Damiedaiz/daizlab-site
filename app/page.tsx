@@ -46,12 +46,7 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    try {
-      if (!localStorage.getItem("daizlab:consent")) setConsentVisible(true);
-    } catch {}
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => { navigator.serviceWorker.register("/sw.js").catch(() => undefined); }, { once: true });
-    }
+    try { if (!localStorage.getItem("daizlab:consent")) setConsentVisible(true); } catch {}
     const onVisibility = () => {
       if (document.hidden) activeMs.current += Date.now() - activeSince.current;
       else activeSince.current = Date.now();
@@ -64,8 +59,7 @@ export default function Home() {
     document.addEventListener("visibilitychange", onVisibility);
     window.addEventListener("scroll", measure, { passive: true });
     const timer = window.setInterval(tick, 1000);
-    measure();
-    tick();
+    measure(); tick();
     return () => {
       document.removeEventListener("visibilitychange", onVisibility);
       window.removeEventListener("scroll", measure);
@@ -81,7 +75,7 @@ export default function Home() {
     const timeScore = Math.min(40, totalSeconds / 90 * 40);
     const depthScore = depthValue.current / 100 * 25;
     const coverageScore = visibleSections.current.size / sections.length * 25;
-    const revisitScore = Math.min(10, Object.values(visits.current).filter((count) => count > 1).length / sections.length * 20);
+    const revisitScore = Math.min(10, Object.values(visits.current).filter(count => count > 1).length / sections.length * 20);
     const result: ReadingResult = {
       score: Math.round(timeScore + depthScore + coverageScore + revisitScore),
       seconds: totalSeconds, depth: depthValue.current, sectionsViewed: visibleSections.current.size,
