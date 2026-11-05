@@ -34,6 +34,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <header className="site-header">
           <Link className="brand" href="/"><span className="brand-mark">D</span> DAIZLAB<span className="brand-dot">.</span></Link>
           <nav aria-label="Main navigation">
+            <Link href="/genesis">Genesis</Link>
             <Link href="/archive">Archive</Link>
             <Link href="/architecture">Architecture</Link>
             <Link href="/haven">Haven</Link>
