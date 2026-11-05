@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Genesis Engine — Mapping the History of Human Intent",
   description: "A DaizLab research framework tracing how human intent moves from precept to expression, interpretation, decision and execution.",
-  alternates: { canonical: "/genesis" },
+  alternates: { canonical: "/genesis/" },
   openGraph: {
     type: "article",
     title: "The Genesis Engine: Mapping the History of Human Intent",
     description: "Before a system can process value, it must understand the source of the action.",
-    url: "https://daizlab.app/genesis"
+    url: "https://daizlab.app/genesis/"
   }
 };
 
