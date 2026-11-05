@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 
-const qs = [
+type Question = [prompt: string, options: string[], correctAnswer: number];
+
+const qs: Question[] = [
   ["What is the primary role of a logistics operating system?", ["Coordinate and optimize logistics workflows", "Replace every human decision", "Only store invoices"], 0],
   ["Which signal helps estimate delivery progress?", ["Font choice", "GPS and scan events", "Social likes"], 1],
   ["What does route optimization seek to improve?", ["Distance, time and constraints", "Logo consistency", "Email subject lines"], 0],
