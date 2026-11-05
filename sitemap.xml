@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://daizlab.app/</loc></url><url><loc>https://daizlab.app/archive.html</loc></url><url><loc>https://daizlab.app/arch.html</loc></url><url><loc>https://daizlab.app/waaas.html</loc></url><url><loc>https://daizlab.app/damiedaiz.html</loc></url><url><loc>https://daizlab.app/dgcs.html</loc></url><url><loc>https://daizlab.app/slos.html</loc></url><url><loc>https://daizlab.app/haven/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://daizlab.app/</loc></url>
+  <url><loc>https://daizlab.app/genesis</loc></url>
+  <url><loc>https://daizlab.app/archive.html</loc></url>
+  <url><loc>https://daizlab.app/arch.html</loc></url>
+  <url><loc>https://daizlab.app/waaas.html</loc></url>
+  <url><loc>https://daizlab.app/damiedaiz.html</loc></url>
+  <url><loc>https://daizlab.app/dgcs.html</loc></url>
+  <url><loc>https://daizlab.app/slos.html</loc></url>
+  <url><loc>https://daizlab.app/haven/</loc></url>
+</urlset>
