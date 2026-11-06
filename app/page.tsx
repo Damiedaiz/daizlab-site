@@ -96,11 +96,19 @@ export default function Home() {
     {consentVisible && <aside className="consent" role="dialog" aria-label="Local reading activity notice"><p>This experience stores your reading activity on this device only. Nothing is sent to a server.</p><button className="btn small" onClick={acceptConsent}>Continue</button></aside>}
     <main className="wrap">
       <section className="hero">
-        <p className="eyebrow">INTENT SYSTEMS LABORATORY · EST. IN PRINCIPLE</p>
-        <h1>Systems should understand <em>why</em>, not just what was clicked.</h1>
-        <p className="lead">DaizLab explores a simple proposition: human intent can be made clearer, more structured and more useful to digital systems.</p>
-        <div className="hero-actions"><a className="btn" href="#objective">Explore the objective <span>↘</span></a><Link className="text-link" href="/architecture">How the architecture works →</Link></div>
-        <div className="signal"><span className="pulse" /> HUMAN INTENT <span className="line" /> STRUCTURED ACTION</div>
+        <p className="eyebrow">DAIZLAB / INTENT SYSTEMS LABORATORY</p>
+        <h1>Intent is the <em>gateway.</em><br />Action is the outcome.</h1>
+        <p className="lead">A connected environment for turning human intention into structured decisions, useful systems and measurable execution. Enter through the idea. Move through the system. Arrive at the outcome.</p>
+        <div className="hero-actions"><a className="btn" href="#gateway-map">Explore the gateway <span>↘</span></a><Link className="text-link" href="/architecture">Understand the architecture →</Link></div>
+        <div className="signal"><span className="pulse" /> INTENT <span className="line" /> DECISION <span className="line" /> EXECUTION</div>
+      </section>
+      <section className="gateway-map" id="gateway-map" aria-label="Explore DaizLab">
+        <div className="gateway-map-heading"><div><span className="section-kicker">THE DAIZLAB GATEWAY / 03 PATHS</span><h2>Start where your intention is.</h2></div><p>Three entry points. One connected environment. The next step appears when you are ready for it.</p></div>
+        <div className="gateway-map-grid">
+          <Link className="gateway-map-card" href="/genesis"><span className="gateway-map-number">01 / UNDERSTAND</span><span className="gateway-map-symbol">↗</span><strong>Discover the doctrine</strong><small>Explore the ideas, research and architecture behind intent-led systems.</small><span className="gateway-map-action">ENTER THE KNOWLEDGE LAYER <b>→</b></span></Link>
+          <Link className="gateway-map-card" href="/growth-systems"><span className="gateway-map-number">02 / BUILD</span><span className="gateway-map-symbol">⌘</span><strong>Explore the systems</strong><small>Move into workflows, operating systems and connected infrastructure.</small><span className="gateway-map-action">ENTER THE SYSTEMS LAYER <b>→</b></span></Link>
+          <Link className="gateway-map-card" href="/haven"><span className="gateway-map-number">03 / EXPERIENCE</span><span className="gateway-map-symbol">◉</span><strong>Enter the experience</strong><small>Meet the spaces where people, memory and digital action come together.</small><span className="gateway-map-action">ENTER THE EXPERIENCE LAYER <b>→</b></span></Link>
+        </div>
       </section>
       <section className="section objective" id="objective">
         <div className="section-kicker">01 / THE OBJECTIVE</div>
