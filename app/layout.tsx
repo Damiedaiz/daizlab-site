@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Analytics } from "@vercel/analytics/next";
 import ServiceWorker from "./ServiceWorker";
+import GatewayNav from "./GatewayNav";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#020617",
+  themeColor: "#070707",
   width: "device-width",
   initialScale: 1
 };
@@ -33,12 +34,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <ServiceWorker />
         <header className="site-header">
           <Link className="brand" href="/"><span className="brand-mark">D</span> DAIZLAB<span className="brand-dot">.</span></Link>
-          <nav aria-label="Main navigation">
-            <Link href="/genesis">Genesis</Link>
-            <Link href="/archive">Archive</Link>
-            <Link href="/architecture">Architecture</Link>
-            <Link href="/haven">Haven</Link>
-          </nav>
+          <div className="header-right">
+            <span className="header-manifesto">SYSTEMS OVER HUSTLE <i /> INTENT BEFORE EXECUTION</span>
+            <GatewayNav />
+          </div>
         </header>
         {children}
         <footer className="footer">
