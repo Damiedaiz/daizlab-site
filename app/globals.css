@@ -79,3 +79,57 @@
 .gateway-map-action b{font-size:15px;font-weight:400;transition:transform .2s}
 .gateway-map-card:hover .gateway-map-action b{transform:translateX(4px);color:var(--gateway-gold)}
 @media(max-width:760px){.gateway-map{padding:8px 0 60px}.gateway-map-heading{display:block}.gateway-map-heading>p{margin-top:12px}.gateway-map-grid{grid-template-columns:1fr}.gateway-map-card{min-height:205px}.gateway-map-card strong{margin-top:28px}}
+
+
+/* PRINCE OF AFRICA — /this */
+.prince-page{min-height:100vh;background:#070706;color:#eee9dc;overflow:hidden;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.prince-page a{color:inherit}
+.prince-nav{max-width:1240px;margin:auto;padding:26px 28px;display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #ffffff12;color:#777;font:9px/1.2 ui-monospace,SFMono-Regular,monospace;letter-spacing:.16em}
+.prince-brand{color:#d4af37!important;font-weight:800}
+.prince-hero{position:relative;max-width:1240px;margin:auto;padding:120px 28px 145px}
+.prince-kicker,.prince-label,.prince-overline{color:#d4af37;font:10px/1.4 ui-monospace,SFMono-Regular,monospace;letter-spacing:.22em;font-weight:700}
+.prince-hero h1{position:relative;max-width:1000px;margin:28px 0;font-size:clamp(3.4rem,9vw,8.8rem);line-height:.89;letter-spacing:-.08em;font-weight:800}
+.prince-hero h1 em{font-family:Georgia,serif;font-weight:400;color:#a8a49a}
+.prince-hero h1 span{color:#d4af37;font-family:Georgia,serif;font-weight:400}
+.prince-lead{max-width:690px;color:#aaa69c;font-size:clamp(1rem,1.8vw,1.25rem);line-height:1.85}
+.prince-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap;margin-top:35px}
+.prince-button{display:inline-flex;padding:14px 19px;border:1px solid #d4af3780;background:#d4af3712;border-radius:5px;color:#f2e9c9!important;font:700 10px/1 ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em;transition:.25s}
+.prince-button:hover{background:#d4af3724;border-color:#d4af37;transform:translateY(-2px)}
+.prince-link{color:#89867e!important;font:10px/1 ui-monospace,SFMono-Regular,monospace;letter-spacing:.13em}
+.prince-link:hover{color:#d4af37!important}
+.prince-seal{position:absolute;right:7%;top:150px;width:190px;height:190px;border:1px solid #d4af3740;border-radius:50%;display:grid;place-content:center;text-align:center;gap:4px;transform:rotate(8deg);box-shadow:0 0 0 24px #d4af3705,0 0 0 50px #d4af3703}
+.prince-seal span{font:8px ui-monospace,SFMono-Regular,monospace;letter-spacing:.18em;color:#8d8779}
+.prince-seal strong{font:34px Georgia,serif;color:#d4af37;font-weight:400}
+.prince-orbit{position:absolute;border:1px solid #d4af3710;border-radius:50%;pointer-events:none}
+.prince-orbit-a{width:55vw;height:55vw;right:-25vw;top:6vh}
+.prince-orbit-b{width:35vw;height:35vw;left:-20vw;top:80vh}
+.prince-thesis,.prince-gift,.prince-journey{max-width:1240px;margin:auto;padding:105px 28px;border-top:1px solid #ffffff12;display:grid;grid-template-columns:220px 1fr;gap:50px}
+.prince-thesis h2,.prince-gift h2,.prince-final h2{font:400 clamp(2.2rem,5vw,5rem)/1.02 Georgia,serif;letter-spacing:-.05em;margin:0;max-width:820px}
+.prince-thesis h2 i{color:#d4af37;font-weight:400}
+.prince-thesis p{max-width:720px;color:#98958d;line-height:1.9;font-size:1.05rem}
+.prince-gift{background:linear-gradient(180deg,#090908,#070706)}
+.prince-gift-copy>p{max-width:650px;color:#aaa69c;line-height:1.8}
+.prince-gift-copy strong{color:#eee9dc}
+.prince-gift-list{margin-top:40px;border-top:1px solid #ffffff12}
+.prince-gift-list article{display:grid;grid-template-columns:55px 1fr 30px;gap:15px;align-items:center;padding:23px 0;border-bottom:1px solid #ffffff12}
+.prince-gift-list article>span{color:#d4af37;font:10px ui-monospace,SFMono-Regular,monospace}
+.prince-gift-list h3{margin:0 0 4px;font-size:1.1rem}
+.prince-gift-list p{margin:0;color:#85827b;font-size:.92rem}
+.prince-gift-list b{color:#d4af37;font-size:20px;font-weight:400}
+.prince-quote{max-width:1000px;margin:70px auto;padding:50px 28px;text-align:center}
+.prince-quote p{font:400 clamp(2rem,5vw,4.8rem)/1.05 Georgia,serif;letter-spacing:-.045em;color:#e9e3d5;margin:0}
+.prince-quote span{display:block;margin-top:22px;color:#6e6b65;font:9px ui-monospace,SFMono-Regular,monospace;letter-spacing:.2em}
+.prince-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.prince-steps>div{min-height:220px;padding:25px;border:1px solid #ffffff12;background:#0b0b0a}
+.prince-steps span{color:#d4af37;font:10px ui-monospace,SFMono-Regular,monospace}
+.prince-steps h3{font:400 2rem Georgia,serif;margin:40px 0 10px}
+.prince-steps p{color:#85827b;line-height:1.7;margin:0}
+.prince-final{max-width:900px;margin:40px auto 0;padding:125px 28px 110px;text-align:center;border-top:1px solid #ffffff12}
+.prince-final h2{margin:25px auto 15px}
+.prince-final>p:not(.prince-kicker){max-width:650px;margin:0 auto;color:#96928a;line-height:1.9}
+.prince-final .prince-actions{justify-content:center}
+.prince-footer{max-width:1240px;margin:auto;padding:24px 28px 35px;border-top:1px solid #ffffff12;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#5f5c57;font:8px ui-monospace,SFMono-Regular,monospace;letter-spacing:.14em}
+.prince-page:not(.is-ready) .prince-hero h1,.prince-page:not(.is-ready) .prince-lead,.prince-page:not(.is-ready) .prince-actions{opacity:0;transform:translateY(18px)}
+.prince-page.is-ready .prince-hero h1,.prince-page.is-ready .prince-lead,.prince-page.is-ready .prince-actions{transition:opacity .9s ease,transform .9s ease;opacity:1;transform:none}
+@media(max-width:760px){.prince-nav{padding:20px 17px}.prince-nav>span{display:none}.prince-hero{padding:82px 18px 105px}.prince-hero h1{font-size:clamp(3rem,16vw,5.4rem)}.prince-seal{position:relative;right:auto;top:auto;margin:55px auto 0;width:155px;height:155px}.prince-thesis,.prince-gift,.prince-journey{display:block;padding:72px 18px}.prince-thesis>div:last-child,.prince-gift-copy,.prince-steps{margin-top:30px}.prince-steps{grid-template-columns:1fr}.prince-steps>div{min-height:180px}.prince-steps h3{margin-top:28px}.prince-quote{padding:35px 18px}.prince-final{padding:95px 18px 85px}.prince-footer{padding:22px 18px}}
+@media(prefers-reduced-motion:reduce){.prince-page.is-ready .prince-hero h1,.prince-page.is-ready .prince-lead,.prince-page.is-ready .prince-actions{transition:none}}
